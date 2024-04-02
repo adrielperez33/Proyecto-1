@@ -1,0 +1,55 @@
+/* Reset CSS */
+/* -------------------------------------------- */
+
+/* Aplica un margen y relleno de 0 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Esto incluye el margen y el relleno en el cálculo del tamaño del elemento */
+  }
+  
+  /* Establece las fuentes a un tamaño legible */
+  html {
+    font-size: 16px; /* Establece el tamaño de la fuente base para el documento */
+  }
+  
+  /* Elimina la decoración del enlace */
+  a {
+    text-decoration: none;
+  }
+  
+  /* Elimina la lista de viñetas de los elementos de la lista */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Establece una apariencia básica para los elementos de formulario */
+  button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+  }
+  
+  /* Elimina los estilos predeterminados de los botones */
+  button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  /* Establece una apariencia básica para los elementos de formulario */
+  input[type="text"], input[type="email"], input[type="password"], textarea, select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: inherit;
+  }
+  
+  /* Agrega estilos de reset para elementos específicos según sea necesario */
+  /* Por ejemplo: */
+  /* img { */
+  /*   max-width: 100%; */
+  /*   height: auto; */
+  /* } */
+  
+  /* Agrega tus estilos personalizados a partir de aquí */
+  

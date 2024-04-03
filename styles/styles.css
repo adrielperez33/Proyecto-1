@@ -1,8 +1,114 @@
-body{
-    background-color: black;
+header{
+background-color:#00dffc ;
+display: flex;
+align-items: center;
+justify-content: center;
 }
-body{
+
+main{
+background-color: #008c9e;
+}
+
+footer{
+background-color: #005f6b;
+}
+
+#titulo1{
+    font-family: verdana;
+    font-size: 6em;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.presentacion{
+    border: solid;
+    border-color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.sobreMi{
+    padding-top: 2em;
+    margin: 1em;
+    margin-left: 10em;
+    margin-right: 10em;
+    font-size: 1.5em;
+    font-family: verdana;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.tecnologias{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: verdana;
+}
+
+.fotos{
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.radio{
+    margin-left: 3em;
+    margin-right: 3em;
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+}
+
+.pfotos1{
+    position: absolute;
+    top: -2em; 
+    left: -16em;
+    text-align: center;
+    width: 100%;
+}
+
+.pfotos2{
+    position: absolute;
+    top: -2em; 
+    text-align: center;
+    width: 100%;
+}
+
+.pfotos3{
+    position: absolute;
+    top: -2em; 
+    left: 16em;
+    text-align: center;
+    width: 100%;
+}
+
+.yo{
+    width: 150px;
+    height: auto;
+    border-radius: 100%;
+    border: 2px solid;
+    display: block;
+    margin: 0 auto;
+}
+

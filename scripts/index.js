@@ -12,9 +12,6 @@ class Repository{
         this.array = [];
     }
 
-    // activities(){
-    //     this.array = [];
-    // }
 
     getAllActivities(){
         return this.array;
@@ -34,7 +31,6 @@ class Repository{
 
 const i = new Repository();
 
-// const {id, title, description, imgUrl} = propiedades
 
 function tarjetasHtml(propiedades) {
 
@@ -65,6 +61,7 @@ function tarjetasHtml(propiedades) {
     // card.appendChild(titulo)
     // card.appendChild(descripcion)
     // card.appendChild(img)
+    // aca lo cambie porque lo cambio el profe
     card.append(titulo,descripcion,img,botonEliminar)
 
     return card;
@@ -123,7 +120,6 @@ function handler() {
 const boton = document.getElementsByClassName("glowing-btn")[k];
 
 boton.addEventListener("click",()=> {
-    // evento.preventDefault();
     handler();
 })
 

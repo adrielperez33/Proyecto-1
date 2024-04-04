@@ -392,6 +392,3 @@ footer{
     text-align: center;
   }
   
-  /* display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Columnas automáticas con un mínimo de 200px / */
-  /* gap: 20px; / Espacio entre las "cards" */

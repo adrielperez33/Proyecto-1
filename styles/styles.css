@@ -343,3 +343,39 @@ footer{
     font-family: verdana;
     font-size: 1em;
 }
+
+.divCards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 300px;
+  padding: 2px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tituloCard{
+  font-size: 1.7em;
+}
+
+.descripcionCard{
+  font-size: 1em;
+}
+
+.imagenCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+#contenedor{
+  display:grid;
+grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Columnas automáticas con un mínimo de 200px /
+gap: 20px; / Espacio entre las "cards" */
+}

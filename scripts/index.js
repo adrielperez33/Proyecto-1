@@ -27,6 +27,7 @@ class Repository{
 
     deleteActivity(id){
         this.array = this.array.filter(elemento => elemento.id !== id);
+        return this.array
     }
     // aqui se implemento la funcion flecha por sugerencia de legibilidad de chatgpt
 }
@@ -48,14 +49,23 @@ function tarjetasHtml(propiedades) {
     const img = document.createElement("img");
     img.src = imgUrl;
 
+    const botonEliminar = document.createElement("button");
+    botonEliminar.innerText = "Eliminar";
+    botonEliminar.addEventListener("click", () => {
+    i.deleteActivity(id);
+    contenedorNuevo();
+    });
+
     const card = document.createElement("div");
     titulo.classList.add("tituloCard")
     descripcion.classList.add("descripcionCard")
     img.classList.add("imagenCard")
     card.classList.add("divCards")
-    card.appendChild(titulo)
-    card.appendChild(descripcion)
-    card.appendChild(img)
+    botonEliminar.classList.add("glowing-btn")
+    // card.appendChild(titulo)
+    // card.appendChild(descripcion)
+    // card.appendChild(img)
+    card.append(titulo,descripcion,img,botonEliminar)
 
     return card;
 }
@@ -73,21 +83,32 @@ function contenedorNuevo() {
     cards.forEach((cartas) => contenedor.appendChild(cartas));
 }
 
-let k = 1;
+let k = 0;
 
-function inputs() {
+function handler() {
     const titulo = document.getElementById("titulo").value
     const description = document.getElementById("descripcion").value
     const imagen = document.getElementById("url").value
+
+    // if (titulo !== "" && descripcion !== "" && imagen !== "") {
+    //     i.crearActivity(k, titulo, descripcion, imagen);
+    //     k++;
+    //     contenedorNuevo();
+    // } else {
+    //     alert("Hay datos incompletos");
+    // }
+
+    // el codigo de arriba lo dejo comentado para cumplir con la consigna (mostrar un mensaje avisando al usuario de que hay datos incompletos)
+    // pero dejo el de abajo pq me parece mas excato que la pagina te diga que campo esta incompleto
 
     if (titulo != "") {
         
         if (description != "") {
         
             if (imagen != "") {
-                contenedorNuevo();
                 i.crearActivity(k,titulo,description,imagen)
                 k++;
+                contenedorNuevo();
             }else{
                 alert("falta completar la imagen")
             }
@@ -99,9 +120,10 @@ function inputs() {
     }
 }
 
-const boton = document.getElementsByClassName("glowing-btn")[0];
+const boton = document.getElementsByClassName("glowing-btn")[k];
 
 boton.addEventListener("click",()=> {
     // evento.preventDefault();
-    inputs();
+    handler();
 })
+

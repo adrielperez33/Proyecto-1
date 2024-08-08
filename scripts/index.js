@@ -1,33 +1,33 @@
-class Activity{
-    constructor(id, title, description, imgUrl){
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.imgUrl = imgUrl;
-    }
-}
+// class Activity{
+//     constructor(id, title, description, imgUrl){
+//         this.id = id;
+//         this.title = title;
+//         this.description = description;
+//         this.imgUrl = imgUrl;
+//     }
+// }
 
-class Repository{
-    constructor(){
-        this.array = [];
-    }
+// class Repository{
+//     constructor(){
+//         this.array = [];
+//     }
 
 
-    getAllActivities(){
-        return this.array;
-    }
+//     getAllActivities(){
+//         return this.array;
+//     }
 
-    crearActivity(id, title, description, imgUrl){
-        let actividad = new Activity(id, title, description, imgUrl)
-        this.array.push(actividad);
-    }
+//     crearActivity(id, title, description, imgUrl){
+//         let actividad = new Activity(id, title, description, imgUrl)
+//         this.array.push(actividad);
+//     }
 
-    deleteActivity(id){
-        this.array = this.array.filter(elemento => elemento.id !== id);
-        return this.array
-    }
-    // aqui se implemento la funcion flecha por sugerencia de legibilidad de chatgpt
-}
+//     deleteActivity(id){
+//         this.array = this.array.filter(elemento => elemento.id !== id);
+//         return this.array
+//     }
+//     // aqui se implemento la funcion flecha por sugerencia de legibilidad de chatgpt
+// }
 
 const i = new Repository();
 
@@ -102,7 +102,7 @@ function handler() {
         
         if (description != "") {
         
-            if (imagen != "") {
+            if (imagen != "") {                                                                                         
                 i.crearActivity(k,titulo,description,imagen)
                 k++;
                 contenedorNuevo();
@@ -122,4 +122,3 @@ const boton = document.getElementsByClassName("glowing-btn")[k];
 boton.addEventListener("click",()=> {
     handler();
 })
-

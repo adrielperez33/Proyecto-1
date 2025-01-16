@@ -13,3 +13,12 @@ Este fue mi primer proyecto en Henry, donde creé una página web interactiva ut
 
 Este proyecto marcó el inicio de mi aprendizaje en el desarrollo web, aplicando conceptos básicos de estructura, estilos e interactividad. 🚀
 
+🛠️ Cómo probarlo en tu computadora:
+
+Clona el repositorio en tu equipo.
+
+Abre la carpeta del proyecto y busca la carpeta llamada "proyecto 1".
+
+Dentro de esta carpeta, abre el archivo index.html en tu navegador.
+
+¡Listo! Ahora puedes probar la interacción del formulario y explorar la página. 🚀

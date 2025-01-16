@@ -13,6 +13,8 @@ Este fue mi primer proyecto en Henry, donde creé una página web interactiva ut
 
 Este proyecto marcó el inicio de mi aprendizaje en el desarrollo web, aplicando conceptos básicos de estructura, estilos e interactividad. 🚀
 
+
+
 🛠️ Cómo probarlo en tu computadora:
 
 Clona el repositorio en tu equipo.
